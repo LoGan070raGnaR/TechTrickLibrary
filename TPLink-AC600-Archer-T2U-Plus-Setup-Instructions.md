@@ -65,7 +65,7 @@ This step ensures that the necessary driver is available for your wireless adapt
 
 Reboot the system to ensure that the driver installation takes effect. This step is crucial for the new driver to be loaded and for the changes to be applied to the system.
 
-**Step 6: Check the USB devices again using the `lsusb` command and verify the wireless network configuration using the `iwconfig` command.
+**Step 6: Check the USB devices again using the `lsusb` command and verify the wireless network configuration using the `iwconfig` command.**
 
 Use the following commands to check the USB devices and verify the wireless network configuration after rebooting:
 
