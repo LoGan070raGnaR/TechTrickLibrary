@@ -180,3 +180,5 @@ In this section, we will cover the PowerShell profiles, execution policies, and 
 - To remove the profile, delete its contents.
 
 These notes cover the PowerShell profiles and execution policies. Profiles allow customizations to the PowerShell environment, while execution policies control script execution. Understanding profiles and execution policies is essential for managing and running scripts in PowerShell.
+
+---
