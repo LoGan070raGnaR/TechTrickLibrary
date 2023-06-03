@@ -128,3 +128,55 @@ In this guide, we will cover various aspects of PowerShell related to output and
 ## Conclusion
 These notes cover various aspects of PowerShell output formatting, file operations, and directory management. It's important to understand how PowerShell is invoked and the host environment to fully utilize its capabilities. Output control allows us to tailor our working experience and view data in different ways.
 
+---
+
+# PowerShell: Profiles & Execution Policies
+
+In this section, we will cover the PowerShell profiles, execution policies, and how they affect script execution.
+
+## Introduction to Profiles
+- PowerShell profiles are script files that run automatically when PowerShell starts.
+- Profiles can be customized for individual users or all users on a system.
+- The location of profile files can vary, but they are typically found in default locations.
+- Variables in PowerShell are denoted with a `$` prefix.
+
+## Checking Profiles
+- `$profile` shows the location of the current user's profile.
+- To view the profile file, run `notepad $profile`.
+- Other users' profiles can be accessed by using `$profile | Select-Object *`.
+- If the profile file doesn't exist, use `Get-Content $profile` to create it.
+
+## Creating and Removing Directories
+- Use `New-Item -ItemType Directory dummy` to create a directory.
+- Alternatively, `md` is an alias for `mkdir` to create a directory.
+- To remove a directory, use `rmdir .\dummy`.
+
+## PowerShell Profile
+- Create a profile by opening the profile file with `notepad "file path\PowerShell_profile.ps1"`.
+- Customize the profile by adding commands such as `Get-Date`, `Import-Module PSGit`, or `Import-Module PSColor`.
+- The profile is similar to bash or cshell profiles in Linux.
+
+## Execution Policies
+- Execution policies determine the security level of script execution in PowerShell.
+- Run `Get-Help about_Execution_Policies` for more information on execution policies.
+- Update help by running `Update-Help` as an administrator.
+
+## Checking Execution Policies
+- Run `Get-ExecutionPolicy -List` to see the list of execution policies.
+- Use `Get-ExecutionPolicy` to check the current execution policy.
+- The default policy is usually `Restricted`, which prevents script execution.
+
+## Changing Execution Policies
+- Change the execution policy with `Set-ExecutionPolicy RemoteSigned` to allow signed scripts to run.
+- Run `Get-ExecutionPolicy` again to verify the updated policy.
+
+## Running Scripts with Profiles
+- Open a new PowerShell window to see the effects of the created profile.
+- If you encounter an error stating that running scripts is disabled, it means the profile wasn't loaded.
+- Execution policies control whether scripts can be run or not.
+
+## Modifying Profiles
+- Use `notepad $profile` to edit the profile file.
+- To remove the profile, delete its contents.
+
+These notes cover the PowerShell profiles and execution policies. Profiles allow customizations to the PowerShell environment, while execution policies control script execution. Understanding profiles and execution policies is essential for managing and running scripts in PowerShell.
