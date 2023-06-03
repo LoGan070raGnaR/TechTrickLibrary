@@ -2,7 +2,7 @@
 
 ## Introduction
 - PowerShell is a command-line shell and scripting language developed by Microsoft.
-- It differs from other shells like CShell, Bash, and TShell in that it primarily works with objects, not just text.
+- It differs from other shells like C Shell(csh), Bash, and KornShell(ksh) in that it primarily works with objects, not just text.
 - PowerShell is built on the .NET Framework or .NET Core, depending on the version, and it utilizes the .NET runtime. It leverages various .NET libraries and APIs for its functionality.
 - While PowerShell may utilize components written in C# and other .NET languages, it is not primarily built using C#. Instead, it is predominantly developed using a combination of C++, C#, and other technologies.
 ## Opening PowerShell
