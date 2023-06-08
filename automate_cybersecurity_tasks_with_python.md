@@ -461,7 +461,6 @@ i = 1
 while i < 5:
     print("User can still connect to additional devices.")
     i = i + 1
-    
 print("User has reached maximum number of connected devices.")
 ```
 ---
